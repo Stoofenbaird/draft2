@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  listname_id: 
+  breed_id: 
+  aname: MyString
+  breed: MyString
+  dates: MyString
+  notes: MyString
+
+two:
+  listname_id: 
+  breed_id: 
+  aname: MyString
+  breed: MyString
+  dates: MyString
+  notes: MyString

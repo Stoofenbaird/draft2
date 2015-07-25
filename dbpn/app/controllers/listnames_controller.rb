@@ -1,0 +1,2 @@
+class ListnamesController < ApplicationController
+end
