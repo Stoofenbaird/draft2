@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'home#index'
   get 'home/contact'
 
@@ -16,7 +17,9 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+resources :listnames
+resources :animals
+resources :breeds
   # Example resource route with options:
   #   resources :products do
   #     member do

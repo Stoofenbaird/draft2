@@ -1,11 +1,23 @@
-<!--This page should list all of the names that are in 
-		the database.  
+<!--This page should list all of the names that are in the database.  
 		EX: Aggie
 				Annie
 				Archie
 				Bailey
-		Each name should appear only once even
-		if multiple indvidual animals share that name. Each
-		name should be linked to a page which lists all of the
-		individual animals who share that name. 
-		Add and Edit name links? -->
+		Each name should appear only once even if multiple indvidual animals share that name. Each name should be linked to a page which lists all of the individual animals who share that name. 
+		Add name links? -->
+		<h1>Master List of Petnames</h1>
+		<h3>All of the Petnames we've collected</h3>
+		<p>Click on a name to see the indvidual animals with that name.</p>
+		<p><%= link_to 'Add a name', new_listname_path %></p>
+			<table>
+			<tbody>
+					<% @listnames.each do |listname| %>
+					<tr>
+						<td><%= link_to listname.lname, listname_path(listname.lname) %></td>
+						<!-- add link to list of animals with listname -->	
+					</tr>
+			</tbody>
+		</table>
+
+	</br>
+<% end %>
