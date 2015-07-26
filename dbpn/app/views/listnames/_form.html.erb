@@ -1,0 +1,17 @@
+<%= form_for(@listname) do |f| %>
+<% if @listname.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@listname.errors.count, "error") %> prohibited this name from being added: </h2>
+
+	<ul>
+		<% @listname.errors.full_messages.each do |message| %>
+		<li><%= message %></li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
+
+<div class="actions">
+	<%= f.submit %>
+</div>
+<% end %>
